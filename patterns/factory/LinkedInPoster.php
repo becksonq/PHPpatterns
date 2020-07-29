@@ -1,9 +1,8 @@
 <?php
 
 
-namespace factory;
+namespace app\patterns\factory;
 
-require 'LinkedInConnector.php';
 
 class LinkedInPoster extends SocialNetworkPoster
 {

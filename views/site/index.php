@@ -1,5 +1,8 @@
 <?php
 
+use yii\helpers\Html;
+use yii\helpers\Url;
+
 /* @var $this yii\web\View */
 
 $this->title = 'Test PHP patterns';
@@ -10,9 +13,13 @@ $this->title = 'Test PHP patterns';
       <div class="col-lg-12">
         <h1>Patterns test</h1>
 
-        <a class="btn btn-outline-secondary" href="index.php?pattern=factory" role="button">Factory</a>
-        <a class="btn btn-outline-secondary" href="index.php?pattern=abstract_factory" role="button">Abstract
-          Factory</a>
+          <?= Html::a('Factory', Url::toRoute(['/factory/index']), [
+              'class' => 'btn btn-outline-secondary',
+          ]) ?>
+          <?= Html::a('Abstract Factory', Url::toRoute(['/abstract-factory/index']), [
+              'class' => 'btn btn-outline-secondary',
+          ]) ?>
+
         <hr>
       </div>
     </div>

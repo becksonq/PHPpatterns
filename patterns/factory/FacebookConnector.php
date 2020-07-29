@@ -1,9 +1,8 @@
 <?php
 
 
-namespace factory;
+namespace app\patterns\factory;
 
-require 'SocialNetworkConnector.php';
 
 class FacebookConnector implements SocialNetworkConnector
 {

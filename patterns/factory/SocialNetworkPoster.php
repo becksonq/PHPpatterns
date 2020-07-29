@@ -1,7 +1,7 @@
 <?php
 
 
-namespace factory;
+namespace app\patterns\factory;
 
 
 abstract class SocialNetworkPoster

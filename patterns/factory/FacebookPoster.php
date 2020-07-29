@@ -1,9 +1,7 @@
 <?php
 
-namespace factory;
+namespace app\patterns\factory;
 
-require 'SocialNetworkPoster.php';
-require 'FacebookConnector.php';
 
 class FacebookPoster extends SocialNetworkPoster
 {
