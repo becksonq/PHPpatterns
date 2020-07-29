@@ -19,6 +19,9 @@ $this->title = 'Test PHP patterns';
           <?= Html::a('Abstract Factory', Url::toRoute(['/abstract-factory/index']), [
               'class' => 'btn btn-outline-secondary',
           ]) ?>
+          <?= Html::a('Command', Url::toRoute(['/command/index']), [
+              'class' => 'btn btn-outline-secondary',
+          ]) ?>
 
         <hr>
       </div>
