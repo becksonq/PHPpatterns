@@ -17,3 +17,12 @@ $invoker->doSomethingImportant();
 ?>
 <hr>
 
+<?php
+$queue = \app\patterns\command\real\Queue::get();
+
+if ($queue->isEmpty()) {
+    $queue->add(new \app\patterns\command\real\IMDBGenresScrapingCommand());
+}
+
+$queue->work();
+

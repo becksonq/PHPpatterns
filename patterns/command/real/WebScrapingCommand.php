@@ -1,7 +1,7 @@
 <?php
 
 
-namespace command;
+namespace app\patterns\command\real;
 
 
 abstract class WebScrapingCommand implements Command
