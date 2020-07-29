@@ -19,16 +19,16 @@ class FacebookConnector implements SocialNetworkConnector
     public function logIn(): void
     {
         echo "Send HTTP API request to log in user $this->login with " .
-            "password $this->password\n" . '<br>';
+            "password $this->password" . '<br>';
     }
 
     public function logOut(): void
     {
-        echo "Send HTTP API request to log out user $this->login\n" . '<br>' . '<br>';
+        echo "Send HTTP API request to log out user $this->login" . '<br>' . '<br>';
     }
 
     public function createPost($content): void
     {
-        echo "Send HTTP API requests to create a post in Facebook timeline.\n" . '<br>';
+        echo "Send HTTP API requests to create a post in Facebook timeline." . '<br>';
     }
 }

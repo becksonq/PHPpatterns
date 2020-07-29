@@ -9,5 +9,5 @@ Testing actual rendering with the PHPTemplate factory:<br>
 
 <!-- Можете убрать комментарии, если у вас установлен Twig. -->
 
-<!-- Testing rendering with the Twig factory: -->
-<?//= $page->render(new TwigTemplateFactory) ?>
+Testing rendering with the Twig factory:
+<?= $page->render(new \app\patterns\abstract_factory\real\TwigTemplateFactory()) ?>

@@ -54,6 +54,24 @@ $config = [
             'class' => \yii\queue\file\Queue::class,
             'as log' => \yii\queue\LogBehavior::class,
         ],
+        'view' => [
+            'class' => 'yii\web\View',
+            'renderers' => [
+                'html' => [
+                    'class' => 'yii\twig\ViewRenderer',
+                    'cachePath' => '@runtime/Twig/cache',
+                    // Array of twig options:
+                    'options' => [
+                        'auto_reload' => true,
+                    ],
+                    'globals' => [
+                        'html' => ['class' => '\yii\helpers\Html'],
+                    ],
+                    'uses' => ['yii\bootstrap4'],
+                ],
+                // ...
+            ],
+        ],
     ],
     'params' => $params,
 ];
