@@ -1,7 +1,7 @@
 <?php
 
 
-namespace abstract_factory;
+namespace app\patterns\abstract_factory\real;
 
 
 interface TemplateRenderer

@@ -1,9 +1,7 @@
 <?php
 
 
-namespace abstract_factory;
-
-require 'TitleTemplate.php';
+namespace app\patterns\abstract_factory\real;
 
 class PHPTemplateTitleTemplate implements TitleTemplate
 {

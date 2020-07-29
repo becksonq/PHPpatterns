@@ -1,12 +1,7 @@
 <?php
 
 
-namespace abstract_factory;
-
-require 'TemplateFactory.php';
-require 'PHPTemplatePageTemplate.php';
-require 'PHPTemplateTitleTemplate.php';
-require 'PHPTemplateRenderer.php';
+namespace app\patterns\abstract_factory\real;
 
 class PHPTemplateFactory implements TemplateFactory
 {

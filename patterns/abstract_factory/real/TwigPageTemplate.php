@@ -1,11 +1,9 @@
 <?php
 
 
-namespace abstract_factory;
+namespace app\patterns\abstract_factory\real;
 
-require 'BasePageTemplate.php';
-
-class PHPTemplatePageTemplate extends BasePageTemplate
+class TwigPageTemplate extends BasePageTemplate
 {
     public function getTemplateString(): string
     {
@@ -14,7 +12,7 @@ class PHPTemplatePageTemplate extends BasePageTemplate
         return <<<HTML
         <div class="page">
             $renderedTitle
-            <article class="content"><?= \$content; ?></article>
+            <article class="content">{{ content }}</article>
         </div>
 HTML;
     }

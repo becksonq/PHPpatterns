@@ -1,8 +1,7 @@
 <?php
 
 
-namespace abstract_factory;
-
+namespace app\patterns\abstract_factory\real;
 
 class Page
 {

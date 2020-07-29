@@ -1,9 +1,7 @@
 <?php
 
 
-namespace abstract_factory;
-
-require 'TemplateRenderer.php';
+namespace app\patterns\abstract_factory\real;
 
 class PHPTemplateRenderer implements TemplateRenderer
 {

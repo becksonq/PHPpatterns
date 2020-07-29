@@ -1,9 +1,13 @@
 <?php
 /* @var $this yii\web\View */
-?>
-<h1>abstract-factory/index</h1>
 
-<p>
-    You may change the content of this page by modifying
-    the file <code><?= __FILE__; ?></code>.
-</p>
+$page = new \app\patterns\abstract_factory\real\Page('Sample page', 'This it the body.');
+?>
+
+Testing actual rendering with the PHPTemplate factory:<br>
+<?= $page->render(new \app\patterns\abstract_factory\real\PHPTemplateFactory()) ?>
+
+<!-- Можете убрать комментарии, если у вас установлен Twig. -->
+
+<!-- Testing rendering with the Twig factory: -->
+<?//= $page->render(new TwigTemplateFactory) ?>

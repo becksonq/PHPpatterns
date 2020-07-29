@@ -1,8 +1,7 @@
 <?php
 
 
-namespace abstract_factory;
-require 'PageTemplate.php';
+namespace app\patterns\abstract_factory\real;
 
 abstract class BasePageTemplate implements PageTemplate
 {

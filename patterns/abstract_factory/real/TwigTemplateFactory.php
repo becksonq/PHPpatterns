@@ -1,11 +1,7 @@
 <?php
 
 
-namespace abstract_factory;
-
-require 'TwigPageTemplate.php';
-require 'TwigTitleTemplate.php';
-require 'TwigRenderer.php';
+namespace app\patterns\abstract_factory\real;
 
 class TwigTemplateFactory implements TemplateFactory
 {
