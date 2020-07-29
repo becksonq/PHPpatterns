@@ -1,8 +1,10 @@
 <?php
 
 
-namespace app\patterns\factory;
+namespace app\patterns\factory\real;
 
+
+use app\patterns\factory\real\SocialNetworkConnector;
 
 class FacebookConnector implements SocialNetworkConnector
 {

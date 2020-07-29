@@ -1,7 +1,11 @@
 <?php
 
-namespace app\patterns\factory;
+namespace app\patterns\factory\real;
 
+
+use app\patterns\factory\real\FacebookConnector;
+use app\patterns\factory\real\SocialNetworkConnector;
+use app\patterns\factory\real\SocialNetworkPoster;
 
 class FacebookPoster extends SocialNetworkPoster
 {

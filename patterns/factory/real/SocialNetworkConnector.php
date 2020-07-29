@@ -1,7 +1,7 @@
 <?php
 
 
-namespace app\patterns\factory;
+namespace app\patterns\factory\real;
 
 
 interface SocialNetworkConnector

@@ -1,8 +1,12 @@
 <?php
 
 
-namespace app\patterns\factory;
+namespace app\patterns\factory\real;
 
+
+use app\patterns\factory\real\LinkedInConnector;
+use app\patterns\factory\real\SocialNetworkConnector;
+use app\patterns\factory\real\SocialNetworkPoster;
 
 class LinkedInPoster extends SocialNetworkPoster
 {

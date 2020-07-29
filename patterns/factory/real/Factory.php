@@ -1,8 +1,10 @@
 <?php
 
 
-namespace app\patterns\factory;
+namespace app\patterns\factory\real;
 
+
+use app\patterns\factory\real\SocialNetworkPoster;
 
 class Factory
 {
@@ -10,7 +12,7 @@ class Factory
     {
         // ...
         $creator->post("Hello world!");
-        $creator->post("I had a large hamburger this morning!");
+//        $creator->post("I had a large hamburger this morning!");
         // ...
     }
 }
