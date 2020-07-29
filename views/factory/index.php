@@ -6,7 +6,7 @@ use app\patterns\factory\concept\ConcreteCreator1;
 use app\patterns\factory\concept\ConcreteCreator2;
 
 /* @var $this yii\web\View
- * @var $realModel \app\patterns\factory\real\Factory
+ * @var $realModel \app\patterns\factory\real\RealFactory
  * @var $conceptModel \app\patterns\factory\concept\ConceptFactory
  */
 ?>

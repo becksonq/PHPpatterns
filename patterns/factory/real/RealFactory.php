@@ -6,7 +6,7 @@ namespace app\patterns\factory\real;
 
 use app\patterns\factory\real\SocialNetworkPoster;
 
-class Factory
+class RealFactory
 {
     public function clientCode(SocialNetworkPoster $creator)
     {
