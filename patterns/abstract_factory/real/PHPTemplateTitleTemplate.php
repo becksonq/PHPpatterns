@@ -7,6 +7,6 @@ class PHPTemplateTitleTemplate implements TitleTemplate
 {
     public function getTemplateString(): string
     {
-        return "<h1><?= \$title; ?></h1>";
+        return "<h5><?= \$title; ?></h5>";
     }
 }
