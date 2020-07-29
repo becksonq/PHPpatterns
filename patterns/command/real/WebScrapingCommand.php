@@ -45,7 +45,7 @@ abstract class WebScrapingCommand implements Command
     public function download(): string
     {
         $html = file_get_contents($this->getURL());
-        echo "WebScrapingCommand: Downloaded {$this->url}\n";
+        echo "WebScrapingCommand: Downloaded {$this->url}<br>";
 
         return $html;
     }

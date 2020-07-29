@@ -22,7 +22,7 @@ class IMDBGenrePageScrapingCommand extends WebScrapingCommand
     public function parse(string $html): void
     {
         preg_match_all("|href=\"(/title/.*?/)\?ref_=adv_li_tt\"|", $html, $matches);
-        echo "IMDBGenrePageScrapingCommand: Discovered " . count($matches[1]) . " movies.\n";
+        echo "IMDBGenrePageScrapingCommand: Discovered " . count($matches[1]) . " movies.<br>";
 
         foreach ($matches[1] as $moviePath) {
             $url = "https://www.imdb.com" . $moviePath;

@@ -3,6 +3,7 @@ use app\patterns\command\concept\Invoker;
 use app\patterns\command\concept\Receiver;
 use app\patterns\command\concept\SimpleCommand;
 use app\patterns\command\concept\ComplexCommand;
+use app\patterns\command\real\IMDBGenresScrapingCommand;
 
 /* @var $this yii\web\View */
 ?>
@@ -21,7 +22,7 @@ $invoker->doSomethingImportant();
 $queue = \app\patterns\command\real\Queue::get();
 
 if ($queue->isEmpty()) {
-    $queue->add(new \app\patterns\command\real\IMDBGenresScrapingCommand());
+    $queue->add(new IMDBGenresScrapingCommand());
 }
 
 $queue->work();

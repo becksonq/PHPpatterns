@@ -15,7 +15,7 @@ class IMDBGenresScrapingCommand extends WebScrapingCommand
     public function parse($html): void
     {
         preg_match_all("|href=\"(https://www.imdb.com/search/title\?genres=.*?)\"|", $html, $matches);
-        echo "IMDBGenresScrapingCommand: Discovered " . count($matches[1]) . " genres.\n";
+        echo "IMDBGenresScrapingCommand: Discovered " . count($matches[1]) . " genres.<br>";
 
         foreach ($matches[1] as $genre) {
             Queue::get()->add(new IMDBGenrePageScrapingCommand($genre));
